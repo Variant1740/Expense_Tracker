@@ -1,40 +1,40 @@
- Expense Tracker (Python)
+# Expense Tracker (OOP Version)
 
-A simple command-line Python app for tracking personal expenses.  
-It allows you to record, view, and save your spending data in a persistent file so that your records remain intact even after closing the program.
-
----
+This is a Python command-line Expense Tracker refactored from a procedural version into a full Object-Oriented Program (OOP). The project uses classes and methods to manage expenses in a cleaner and more scalable structure.
 
 ## Features
-- Add new expenses with name and amount  
-- View all saved expenses in a formatted table  
-- Calculate total spending
-- Data persistence: automatically saves and loads data from a JSON file (`Expenses.json`)  
-- User-friendly menu interface with clear prompts and feedback  
 
----
+- Add expenses with category, amount, date, and description
+- View expenses in a well-formatted table with fixed-width alignment
+- Left-aligned description column for consistent layout
+- Save expenses to file
+- Load saved expenses
+- Optional pie chart visualization using matplotlib
+- Organized menu system handled through class methods
 
-##  How It Works
-1. When the program starts, it automatically loads previously saved expenses (if any).  
-2. You can choose from the menu:
-   - `1` → Add new expense  
-   - `2` → View all expenses  
-   - `3` → Show total amount spent  
-   - `4` → Save and exit  
-3. Data is stored in `Expenses.json` using the built-in `json` module.  
+## Project Structure
 
----
+- Expense class: Represents a single expense
+- ExpenseTracker class: Handles all program operations (add, view, save, load, charts)
 
-## Technologies Used
-- Python 3
-- JSON module (for data storage)
-- time module (for simple delays and smooth UX)
+## How to Run
 
----
+Run the script using:
+python expense_tracker.py
 
-##  How to Run
+Follow the on-screen menu to add or view expenses, save data, or load previous data.
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/Variant1740/Expense_Tracker.git
-   
+## Changelog
+
+### v2.0 – OOP Rewrite
+- Converted project from procedural code to full OOP structure
+- Added Expense and ExpenseTracker classes
+- Improved table formatting and alignment
+- Simplified menu structure
+- Cleaner and more maintainable code
+
+### v1.0 – Initial Release
+- Basic procedural version using simple functions and loops
+
+## License
+MIT License
