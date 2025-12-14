@@ -1,0 +1,175 @@
+Expense Tracker API (FastAPI Version)
+
+Overview
+
+This project is a RESTful Expense Tracker API built with FastAPI. It is the API counterpart of the earlier CLI (OOP) Expense Tracker, developed as a personal learning project to deepen understanding of backend development, API design, and clean project structuring in Python.
+
+The repository contains two implementations:
+
+A CLI-based OOP version (uploaded earlier)
+
+An API version, located in a separate folder, which exposes expense-tracking functionality via HTTP endpoints
+
+
+This API version is still evolving and is intended to grow alongside the author’s backend learning journey.
+
+
+---
+
+Key Goals of the API Version
+
+Transition from command-line interaction to HTTP-based interaction
+
+Practice RESTful API design principles
+
+Separate concerns using modular Python files
+
+Prepare the project for future extensions (authentication, persistence, analytics)
+
+
+
+---
+
+Project Structure (API Version)
+
+API_version/
+├── __init__.py           # Marks the folder as a Python package
+├── main.py               # Application entry point (FastAPI app)
+├── user.py               # User-related models / logic
+├── expense.py            # Expense models and operations
+├── tracker.py            # Core tracking logic / services
+├── logger.py             # Logging configuration and helpers
+├── requirements.txt      # Project dependencies
+└── .gitkeep              # Keeps empty directories tracked in Git
+
+
+---
+
+Technologies Used
+
+Python 3.x
+
+FastAPI – for building RESTful APIs
+
+Uvicorn – ASGI server for running FastAPI
+
+Pydantic – data validation and schema definition
+
+
+
+---
+
+Installation
+
+1. Clone the repository
+
+
+
+git clone https://github.com/Variant1740/Expense_Tracker.git
+cd Expense_Tracker/API_version
+
+2. Create and activate a virtual environment (recommended)
+
+
+
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+3. Install dependencies
+
+
+
+pip install -r requirements.txt
+
+
+---
+
+Running the API
+
+Start the FastAPI development server using Uvicorn:
+
+uvicorn main:app --reload
+
+API will be available at: http://127.0.0.1:8000
+
+Interactive API docs (Swagger UI): http://127.0.0.1:8000/docs
+
+Alternative docs (ReDoc): http://127.0.0.1:8000/redoc
+
+
+
+---
+
+Features (Current & Planned)
+
+Current
+
+Expense data modeling
+
+Modular service-based structure
+
+FastAPI-powered endpoints
+
+Automatic API documentation via Swagger UI
+
+
+Planned / In Progress
+
+Persistent storage (database integration)
+
+User-specific expense tracking
+
+Authentication and authorization
+
+Monthly and yearly expense summaries
+
+Data visualization endpoints
+
+
+
+---
+
+Relationship to the CLI Version
+
+The CLI Expense Tracker (OOP version) focuses on:
+
+Console-based interaction
+
+Object-Oriented design patterns
+
+File-based persistence
+
+
+The API version focuses on:
+
+Backend architecture
+
+HTTP request/response lifecycle
+
+Scalability and extensibility
+
+
+Both versions coexist in this repository to document the evolution of the project.
+
+
+---
+
+Project Status
+
+Active Development
+
+This project is a personal learning initiative and is not yet production-ready. Structure, endpoints, and internal logic may change as development continues.
+
+
+---
+
+License
+
+MIT License
+
+
+---
+
+Author
+
+Marvellous (Variant1740)
