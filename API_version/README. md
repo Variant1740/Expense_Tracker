@@ -1,6 +1,6 @@
-Expense Tracker API (FastAPI Version)
+##**Expense Tracker API (FastAPI Version)**
 
-Overview
+**Overview
 
 This project is a RESTful Expense Tracker API built with FastAPI. It is the API counterpart of the earlier CLI (OOP) Expense Tracker, developed as a personal learning project to deepen understanding of backend development, API design, and clean project structuring in Python.
 
@@ -14,9 +14,8 @@ An API version, located in a separate folder, which exposes expense-tracking fun
 This API version is still evolving and is intended to grow alongside the author’s backend learning journey.
 
 
----
 
-Key Goals of the API Version
+**Key Goals of the API Version**
 
 Transition from command-line interaction to HTTP-based interaction
 
@@ -27,10 +26,7 @@ Separate concerns using modular Python files
 Prepare the project for future extensions (authentication, persistence, analytics)
 
 
-
----
-
-Project Structure (API Version)
+**Project Structure (API Version)**
 
 API_version/
 ├── __init__.py           # Marks the folder as a Python package
@@ -43,9 +39,8 @@ API_version/
 └── .gitkeep              # Keeps empty directories tracked in Git
 
 
----
 
-Technologies Used
+**Technologies Used**
 
 Python 3.x
 
@@ -57,9 +52,8 @@ Pydantic – data validation and schema definition
 
 
 
----
 
-Installation
+**Installation**
 
 1. Clone the repository
 
@@ -82,9 +76,7 @@ source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 
----
-
-Running the API
+**Running the API**
 
 Start the FastAPI development server using Uvicorn:
 
@@ -98,11 +90,9 @@ Alternative docs (ReDoc): http://127.0.0.1:8000/redoc
 
 
 
----
+**Features (Current & Planned)**
 
-Features (Current & Planned)
-
-Current
+**Current**
 
 Expense data modeling
 
@@ -113,7 +103,7 @@ FastAPI-powered endpoints
 Automatic API documentation via Swagger UI
 
 
-Planned / In Progress
+**Planned / In Progress**
 
 Persistent storage (database integration)
 
@@ -127,9 +117,7 @@ Data visualization endpoints
 
 
 
----
-
-Relationship to the CLI Version
+**Relationship to the CLI Version**
 
 The CLI Expense Tracker (OOP version) focuses on:
 
@@ -152,24 +140,20 @@ Scalability and extensibility
 Both versions coexist in this repository to document the evolution of the project.
 
 
----
 
-Project Status
+**Project Status**
 
 Active Development
 
 This project is a personal learning initiative and is not yet production-ready. Structure, endpoints, and internal logic may change as development continues.
 
 
----
 
-License
+**License**
 
 MIT License
 
 
----
-
-Author
+**Author**
 
 Marvellous (Variant1740)
