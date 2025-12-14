@@ -1,31 +1,34 @@
-("""# Expense Tracker API (FastAPI Version)
 
-Overview
+# **Expense Tracker API (FastAPI Version)**
 
-This project is a RESTful Expense Tracker API built with FastAPI, complementing an earlier CLI-based Expense Tracker (OOP version).
+## **Overview**
+This project is a **RESTful Expense Tracker API** built with **FastAPI**, designed as the API counterpart of an earlier **CLI-based Expense Tracker (OOP version)**.
 
-The repository contains two implementations:
+The repository contains **two implementations**:
 
-CLI (OOP) version – console-based, object-oriented design
+- **CLI (OOP) version** – focused on command-line interaction and object-oriented design.  
+- **API version** – exposes expense-tracking functionality via **HTTP endpoints** for easier access and integration.
 
-API version – exposes expense-tracking functionality via HTTP endpoints
+The **API version** is still under active development and is intended to grow alongside the author’s learning journey in **Python backend development**.
 
+---
 
-The API version is still evolving alongside the author’s backend learning journey.
+## **Key Goals of the API Version**
 
-Key Goals
+The main objectives of the **API version** are:
 
-Transition from CLI to HTTP-based interaction
+- **Transition from CLI to HTTP-based interaction** – allowing users to interact with the expense tracker via HTTP requests instead of the command line.  
+- **Practice RESTful API design principles** – following best practices for designing clean and maintainable APIs.  
+- **Separate concerns using modular Python files** – keeping models, services, and endpoints organized for easier development and maintenance.  
+- **Prepare for future extensions** – including features like **authentication**, **persistent storage**, and **analytics/reporting**.
 
-Practice RESTful API design principles
+---
 
-Separate concerns using modular Python files
+## **Project Structure (API Version)**
 
-Prepare for future extensions (authentication, persistence, analytics)
+The **API version** is organized into modular files for clarity and maintainability:
 
-
-Project Structure (API Version)
-
+```text
 API_version/
 ├── __init__.py        # Marks the folder as a Python package
 ├── main.py            # FastAPI application entry point
@@ -36,111 +39,115 @@ API_version/
 ├── requirements.txt   # Project dependencies
 └── .gitkeep           # Keeps empty directories tracked in Git
 
-Technologies Used
+This structure allows you to **separate concerns** effectively:
+- `main.py` handles the **application entry point** and routes  
+- `user.py` and `expense.py` define **data models and logic**  
+- `tracker.py` contains the **core services and operations**  
+- `logger.py` manages **logging configuration and helpers**  
+- `requirements.txt` lists all **Python dependencies**
 
-Python 3.x
+---
 
-FastAPI – for building RESTful APIs
+## **Technologies Used**
 
-Uvicorn – ASGI server for running FastAPI
+The API version is built using the following technologies:
 
-Pydantic – data validation and schema definition
+- **Python 3.x** – the main programming language for backend logic  
+- **FastAPI** – for building RESTful APIs efficiently  
+- **Uvicorn** – ASGI server used to run the FastAPI application  
+- **Pydantic** – for data validation and schema definition  
 
+These technologies together provide a **fast, modular, and type-safe backend framework** for the expense tracker.
 
-Installation
+---
 
-1. Clone the repository:
+## **Installation**
 
+Follow these steps to set up the API version locally:
 
+1. **Clone the repository:**
 
+```bash
 git clone https://github.com/Variant1740/Expense_Tracker.git
 cd Expense_Tracker/API_version
 
-2. Create and activate a virtual environment:
+2. **Create and activate a virtual environment:**
 
-
-
+```bash
 python -m venv venv
-# Linux / macOS
+# On Linux / macOS
 source venv/bin/activate
-# Windows
+# On Windows
 venv\Scripts\activate
 
-3. Install dependencies:
+3. **Install dependencies:**
 
-
-
+```bash
 pip install -r requirements.txt
 
-Running the API
+---
+
+## **Running the API**
 
 Start the FastAPI development server using Uvicorn:
 
+```bash
 uvicorn main:app --reload
 
-Once running:
+---
 
-API base URL: http://127.0.0.1:8000
+## **API Access & Documentation**
 
-Swagger UI (interactive docs): http://127.0.0.1:8000/docs
+Once the API server is running, you can access:
 
-ReDoc (alternative docs): http://127.0.0.1:8000/redoc
+- **API base URL:** `http://127.0.0.1:8000`  
+- **Swagger UI (interactive API documentation):** `http://127.0.0.1:8000/docs`  
+- **ReDoc (alternative API documentation):** `http://127.0.0.1:8000/redoc`
 
+---
 
-Features
+## **Features**
 
-Current
+**Current Features**
+- Expense data modeling  
+- Modular service-based structure  
+- FastAPI-powered endpoints  
+- Automatic API documentation via Swagger UI  
 
-Expense data modeling
+**Planned / In Progress**
+- Persistent storage (database integration)  
+- User-specific expense tracking  
+- Authentication and authorization  
+- Monthly and yearly expense summaries  
+- Analytics and reporting endpoints
 
-Modular service-based structure
+---
 
-FastAPI-powered endpoints
+## **Relationship to the CLI Version**
 
-Automatic API documentation via Swagger UI
+**CLI Expense Tracker**
+- Console-based interaction  
+- Object-Oriented Programming (OOP)  
+- File-based persistence  
 
+**API Version**
+- Backend architecture  
+- HTTP request/response lifecycle  
+- Scalability and extensibility  
 
-Planned / In Progress
+Both versions coexist in this repository to **document the evolution of the project**.
 
-Persistent storage (database integration)
+---
 
-User-specific expense tracking
+## **Project Status**
 
-Authentication and authorization
+ **Active Development**  
 
-Monthly and yearly expense summaries
+This project is a **personal learning initiative** and is not yet production-ready. Structure, endpoints, and internal logic may change as development continues.
+---
 
-Analytics and reporting endpoints
+## **License**
 
-
-Relationship to the CLI Version
-
-CLI Expense Tracker
-
-Console-based interaction
-
-Object-Oriented Programming (OOP)
-
-File-based persistence
-
-
-API Version
-
-Backend architecture
-
-HTTP request/response lifecycle
-
-Scalability and extensibility
-
-
-Both versions coexist in this repository to document the evolution of the project.
-
-Project Status
-
-🚧 Active Development – This project is a personal learning initiative and is not yet production-ready. Structure, endpoints, and internal logic may change as development continues.
-
-License
-
-MIT License
+This project is licensed under the **MIT License**.
 
 
